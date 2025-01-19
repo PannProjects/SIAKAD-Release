@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ece3ce;
+    color: #333;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #739072;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #739072;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #739072;
+    font-weight: bold;
+}
+
+main h1 {
+    color: #739072;
+    border-bottom: 2px solid #739072;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.data {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form table tr {
+    margin-bottom: 15px;
+}
+
+form table tr td {
+    padding: 10px 0;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    outline: none;
+    border-color: #739072;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #739072;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .data {
+        padding: 15px;
+    }
+
+    form table tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form table tr td {
+        padding: 5px 0;
+    }
+
+    form table tr td:first-child {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tambahan styling untuk validasi */
+input:invalid {
+    border-color: #e74c3c;
+}
+
+input:valid {
+    border-color: #2ecc71;
+}

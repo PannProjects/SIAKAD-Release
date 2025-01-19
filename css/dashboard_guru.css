@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ece3ce;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #739072;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #739072;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #739072;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+main h1 {
+    color: #739072;
+    border-bottom: 2px solid #739072;
+    padding-bottom: 10px;
+}
+
+.data h3 {
+    color: #739072;
+    border-bottom: 1px solid #739072;
+    padding-bottom: 10px;
+}
+
+.data ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.data ul li a {
+    display: inline-block;
+    background-color: #739072;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #739072;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+table td:first-child {
+    text-align: center;
+}
+
+table td:nth-child(3) {
+    text-align: left;
+}
+
+table td a {
+    text-decoration: none;
+    color: #739072;
+    margin: 0 5px;
+}
+
+table td a:hover {
+    color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
